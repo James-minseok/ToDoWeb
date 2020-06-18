@@ -66,6 +66,8 @@ body {
 
 .greetingRemove {
   display: inline;
+  cursor: pointer;
+  color: white;
 }
 
 #greeting {
@@ -123,6 +125,14 @@ h2 {
   font-weight: 500;
 }
 
+.delBtn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+
 .bgimage {
   position: absolute;
   top: 0;
@@ -140,4 +150,33 @@ h2 {
   to {
     opacity: 1;
   }
+}
+
+.js-weather {
+  display: flex;
+}
+
+.iconImg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.weatherExp {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.reAssign {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.weatherTitle {
+  display: flex;
+  flex-direction: column;
 }
