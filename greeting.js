@@ -24,7 +24,7 @@ function printGreeting(name) {
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
   greetingTitle.classList.add(SHOWING_CN);
-  greetingTitle.innerText = `Hello ${name}`;
+  greetingTitle.innerText = `Hello ${name} :)`;
 }
 
 function handleSubmit(event) {
