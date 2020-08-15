@@ -7,6 +7,7 @@ function loadTime() {
   const years = time.getFullYear();
   const months = time.getUTCMonth();
   const days = time.getDate();
+  console.log(days);
 
   date.innerText = `${years}-0${months + 1}-${days}`;
 

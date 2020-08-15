@@ -7,11 +7,13 @@ let toDos = [];
 
 function deleteToDos(event) {
   const btn = event.target;
+  console.log(btn);
   const li = btn.parentNode;
   toDoList.removeChild(li);
-  const id = li.id - 1;
-  toDos.splice(id, 1);
-  console.log(toDos);
+  const cleanToDos = toDos.filter(function (toDo) {
+    return toDo.id !== parseInt(li.id);
+  });
+  toDos = cleanToDos;
   saveToDos();
 }
 
